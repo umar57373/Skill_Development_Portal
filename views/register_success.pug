@@ -1,0 +1,51 @@
+extends layout
+
+block content-head
+  title Registration Successful
+  style.
+    .success-section {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 600px;
+    }
+    .success-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #3498db;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    img {
+      max-width: 200px;
+      height: auto;
+      margin: 1rem 0;
+    }
+    .success-link {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .success-link:hover {
+      background-color: #2980b9;
+    }
+
+block content-body
+  section.success-section
+    .success-container
+      h2 Registration Successful!
+      p Welcome, #{first_name}! Your registration was successful.
+      img(src="/assets/img/flip-book.gif" alt="Success")
+      p#countdown You will be redirected to the login page in 10 seconds.
+      a.success-link(href="/login") Go to Login
+
+  script(src="/assets/js/successRegisterCounter.js")

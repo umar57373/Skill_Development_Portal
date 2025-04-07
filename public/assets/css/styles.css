@@ -1,0 +1,656 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: #F4F7FC;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4A90E2, #7B61FF);
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Section */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    max-width: 1100px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.left-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-section img:hover {
+    transform: scale(1.05);
+}
+
+.right-section {
+    max-width: 500px;
+    text-align: left;
+}
+
+.right-section h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+.right-section h2 {
+    font-size: 28px;
+    color: #4A90E2;
+}
+
+.right-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    background-color: #4A90E2;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #7B61FF;
+    transform: scale(1.05);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.course-paths {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px;
+    background-color: #ffffff;
+}
+.course-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+.course-image {
+    flex: 1;
+    text-align: center;
+}
+.course-image img {
+    max-width: 200px;
+    height: auto;
+}
+.course-info {
+    flex: 1;
+    padding: 0 20px;
+}
+.course-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.course-info p {
+    color: #666;
+    font-size: 16px;
+}
+/* Login and Register Styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F4F7FC;
+}
+.auth-form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+.auth-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #7B61FF;
+}
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+.auth-switch a {
+    color: #4A90E2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.auth-switch a:hover {
+    color: #7B61FF;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .right-section {
+        padding-left: 0;
+        text-align: center;
+    }
+    .course-paths {
+        grid-template-columns: 1fr;
+    }
+    .course-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .course-image img {
+        max-width: 150px;
+    }
+}
+/* Responsive Design for Auth Pages */
+@media screen and (max-width: 480px) {
+    .auth-form {
+        padding: 20px;
+        margin: 0 15px;
+    }
+    .auth-form h2 {
+        font-size: 24px;
+    }
+    .form-group input {
+        font-size: 14px;
+    }
+    .submit-btn {
+        font-size: 16px;
+    }
+}
+/* General Footer Styling */
+footer {
+    background-color: #2d3a47;
+    color: #f1f1f1;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #f1f1f1;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+}
+
+/* Newsletter Form */
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 12px 20px;
+    border: 1px solid #fff;
+    background-color: #3d4c5b;
+    color: #f1f1f1;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter input[type="email"]:focus {
+    border-color: #00bcd4;
+}
+
+.newsletter button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.875rem;
+    color: #b0b0b0;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Additional Effects */
+.footer-container a:focus,
+.footer-column button:focus {
+    outline: 3px solid #00bcd4;
+}
+/* Style for Study Paths Heading */
+.study-paths-heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.study-paths-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #17253c;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.study-paths-heading h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #f59e42;
+    /* Accent color */
+    border-radius: 2px;
+}
+
+.study-paths-heading p {
+    font-size: 18px;
+    color: #6b7280;
+    /* Grey color */
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* Main Container */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    margin: 40px auto;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%;
+    padding: 1rem;
+}
+
+/* Image Container */
+.image-container {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset Styles */
+fieldset {
+    border: 2px solid #3498db;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Legend Styles */
+legend {
+    font-size: 1.5rem;
+    color: #3498db;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Reset Button Styles */
+.btn.reset {
+    background-color: #e74c3c;
+}
+
+.btn.reset:hover {
+    background-color: #c0392b;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+section.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.intro h1 {
+    font-size: 2rem;
+    color: #17253c;
+    margin-bottom: 10px;
+}
+
+section.intro p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        display: block;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+}
+.error-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.error-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.error-container h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e74c3c;
+    /* Red color for error */
+    margin-bottom: 1rem;
+}
+
+.error-container p.error-message {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.error-container a.error-link {
+    font-size: 1.2rem;
+    color: #3498db;
+    /* Blue color for the link */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.error-container a.error-link:hover {
+    background-color: #3498db;
+    color: #fff;
+}

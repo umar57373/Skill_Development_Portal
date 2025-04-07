@@ -1,0 +1,318 @@
+extends userLayout
+
+block content-head
+  title Assignments - LMS
+  
+block content-body
+  .container
+    a.back-btn(href="/courses") Back to Courses
+    h1.main-heading Assignments
+
+    // Admin Panel (visible only to admins)
+    .admin-panel(id="admin-panel" class=(user && user.role === 'admin' ? 'active' : ''))
+      h2 Admin Panel
+      button(onclick="logoutAdmin()").logout-btn Logout
+      .add-assignment-form
+        h3 Add New Assignment
+        input(type="text" id="assignment-title" placeholder="Assignment Title")
+        textarea(id="assignment-description" placeholder="Assignment Description")
+        input(type="date" id="assignment-due-date")
+        button(type="button" onclick="addAssignment()") Add Assignment
+      .assignment-list(id="admin-assignment-list")
+
+    // Student Panel (visible only to users)
+    .student-panel(id="student-panel" class=(user && user.role === 'user' ? 'active' : ''))
+      h2 Your Assignments
+      .assignment-list(id="student-assignment-list")
+
+  style.
+    .back-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #6b7280;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .back-btn:hover {
+      background-color: #4b5563;
+    }
+    .main-heading {
+      text-align: center;
+      color: #1f2937;
+      margin-bottom: 30px;
+    }
+    .admin-panel, .student-panel {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    h2 {
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #374151;
+      margin: 15px 0;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button:hover {
+      background-color: #1d4ed8;
+    }
+    .logout-btn {
+      background-color: #dc2626;
+      float: right;
+    }
+    .logout-btn:hover {
+      background-color: #b91c1c;
+    }
+    .assignment-list {
+      margin-top: 20px;
+    }
+    .assignment-item {
+      border: 1px solid #e5e7eb;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      background-color: #fafafa;
+    }
+    .submission-list {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+    .submission-item {
+      border-top: 1px solid #e5e7eb;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .submit-assignment-form input[type="file"] {
+      border: none;
+      padding: 0;
+    }
+    .status-approved {
+      color: #15803d;
+      font-weight: bold;
+    }
+    .status-pending {
+      color: #d97706;
+      font-weight: bold;
+    }
+
+  script.
+    let assignments = JSON.parse(localStorage.getItem('assignments')) || [];
+    let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
+    const currentUserEmail = "#{user.email}";
+    const currentUserRole = "#{user.role}";
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const adminPanel = document.getElementById('admin-panel');
+      const studentPanel = document.getElementById('student-panel');
+
+      if (currentUserRole === 'admin') {
+        adminPanel.classList.add('active');
+        studentPanel.classList.remove('active');
+        renderAdminAssignments();
+      } else if (currentUserRole === 'user') {
+        adminPanel.classList.remove('active');
+        studentPanel.classList.add('active');
+        renderStudentAssignments();
+      }
+    });
+
+    function logoutAdmin() {
+      window.location.href = '/user/logout';
+    }
+
+    function addAssignment() {
+      const title = document.getElementById('assignment-title').value;
+      const description = document.getElementById('assignment-description').value;
+      const dueDate = document.getElementById('assignment-due-date').value;
+
+      if (title && description && dueDate) {
+        const assignment = {
+          id: assignments.length + 1,
+          title,
+          description,
+          dueDate,
+        };
+        assignments.push(assignment);
+        localStorage.setItem('assignments', JSON.stringify(assignments));
+        renderAdminAssignments();
+        renderStudentAssignments();
+        document.getElementById('assignment-title').value = '';
+        document.getElementById('assignment-description').value = '';
+        document.getElementById('assignment-due-date').value = '';
+      } else {
+        alert('Please fill in all fields');
+      }
+    }
+
+    function renderAdminAssignments() {
+      const adminAssignmentList = document.getElementById('admin-assignment-list');
+      adminAssignmentList.innerHTML = '';
+
+      assignments.forEach(assignment => {
+        const assignmentItem = document.createElement('div');
+        assignmentItem.classList.add('assignment-item');
+        assignmentItem.innerHTML = `
+          <h3>${assignment.title}</h3>
+          <p>${assignment.description}</p>
+          <p>Due Date: ${assignment.dueDate}</p>
+          <div class="submission-list" id="submission-list-${assignment.id}">
+            <h4>Submissions (${submissions.filter(sub => sub.assignmentId === assignment.id).length}):</h4>
+            ${renderSubmissions(assignment.id)}
+          </div>
+        `;
+        adminAssignmentList.appendChild(assignmentItem);
+      });
+    }
+
+    function renderSubmissions(assignmentId) {
+      const assignmentSubmissions = submissions.filter(sub => sub.assignmentId === assignmentId);
+      let html = '';
+      assignmentSubmissions.forEach(sub => {
+        html += `
+          <div class="submission-item">
+            <div>
+              <p><strong>Student:</strong> ${sub.studentName} (${sub.studentEmail})</p>
+              <p><strong>Submission:</strong> ${sub.content}</p>
+              ${sub.fileName ? `<p><strong>File:</strong> <a href="${sub.fileUrl}" target="_blank">${sub.fileName}</a></p>` : ''}
+              ${sub.approved ? `<p class="status-approved">Approved - Score: ${sub.score}/100</p>` : '<p class="status-pending">Pending Approval</p>'}
+            </div>
+            ${!sub.approved ? `
+              <div>
+                <input type="number" id="score-${sub.id}" placeholder="Score (0-100)" min="0" max="100">
+                <button onclick="approveSubmission(${sub.id}, ${assignmentId})">Approve</button>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      });
+      return html || '<p>No submissions yet</p>';
+    }
+
+    function approveSubmission(submissionId, assignmentId) {
+      const scoreInput = document.getElementById(`score-${submissionId}`);
+      const score = parseInt(scoreInput.value);
+
+      if (isNaN(score) || score < 0 || score > 100) {
+        alert('Please enter a valid score between 0 and 100');
+        return;
+      }
+
+      const submission = submissions.find(sub => sub.id === submissionId);
+      if (submission) {
+        submission.approved = true;
+        submission.score = score;
+        localStorage.setItem('submissions', JSON.stringify(submissions));
+        renderAdminAssignments();
+        renderStudentAssignments();
+      }
+    }
+
+    function renderStudentAssignments() {
+      const studentAssignmentList = document.getElementById('student-assignment-list');
+      studentAssignmentList.innerHTML = '';
+
+      assignments.forEach(assignment => {
+        const assignmentItem = document.createElement('div');
+        assignmentItem.classList.add('assignment-item');
+        const studentSubmission = submissions.find(sub => sub.assignmentId === assignment.id && sub.studentEmail === currentUserEmail);
+        assignmentItem.innerHTML = `
+          <h3>${assignment.title}</h3>
+          <p>${assignment.description}</p>
+          <p>Due Date: ${assignment.dueDate}</p>
+          ${studentSubmission ? `
+            <div>
+              <p><strong>Your Submission:</strong> ${studentSubmission.content}</p>
+              ${studentSubmission.fileName ? `<p><strong>File:</strong> <a href="${studentSubmission.fileUrl}" target="_blank">${studentSubmission.fileName}</a></p>` : ''}
+              ${studentSubmission.approved ? 
+                `<p class="status-approved">Status: Approved - Your Score: ${studentSubmission.score}/100</p>` : 
+                `<p class="status-pending">Status: Submitted - Awaiting Approval</p>`}
+            </div>
+          ` : `
+            <div class="submit-assignment-form">
+              <input type="text" id="student-name-${assignment.id}" placeholder="Your Name">
+              <input type="email" id="student-email-${assignment.id}" placeholder="Your Email" value="${currentUserEmail}" readonly>
+              <textarea id="submission-${assignment.id}" placeholder="Your submission"></textarea>
+              <input type="file" id="file-${assignment.id}" accept=".pdf,.doc,.docx">
+              <button onclick="submitAssignment(${assignment.id}, '${currentUserEmail}')">Submit</button>
+            </div>
+          `}
+        `;
+        studentAssignmentList.appendChild(assignmentItem);
+      });
+    }
+
+    function submitAssignment(assignmentId, currentStudentEmail) {
+      const studentName = document.getElementById(`student-name-${assignmentId}`).value;
+      const studentEmail = currentStudentEmail;
+      const content = document.getElementById(`submission-${assignmentId}`).value;
+      const fileInput = document.getElementById(`file-${assignmentId}`);
+      const file = fileInput.files[0];
+
+      if (studentName && studentEmail && content) {
+        const existingSubmission = submissions.find(sub => sub.assignmentId === assignmentId && sub.studentEmail === studentEmail);
+        if (existingSubmission) {
+          alert('You have already submitted this assignment.');
+          return;
+        }
+
+        let fileName = null;
+        let fileUrl = null;
+        if (file) {
+          if (!['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
+            alert('Please upload a PDF or .doc/.docx file');
+            return;
+          }
+          fileName = file.name;
+          fileUrl = URL.createObjectURL(file);
+        }
+
+        const submission = {
+          id: submissions.length + 1,
+          assignmentId,
+          studentName,
+          studentEmail,
+          content,
+          fileName,
+          fileUrl,
+          approved: false,
+          score: null,
+        };
+        submissions.push(submission);
+        localStorage.setItem('submissions', JSON.stringify(submissions));
+        renderStudentAssignments();
+      } else {
+        alert('Please fill in all required fields');
+      }
+    }

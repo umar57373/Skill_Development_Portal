@@ -1,0 +1,114 @@
+extends userLayout
+
+block content-head
+  title Courses and Resources - LMS
+
+block content-body
+  style.
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .main-heading {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .course-sections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .course-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+    .course-section:hover {
+      transform: scale(1.05);
+    }
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .section-header h1 {
+      font-size: 1.5em;
+      color: #444;
+    }
+    .section-header p {
+      color: #666;
+      margin: 10px 0;
+    }
+    .toggle-btn {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .toggle-btn:hover {
+      background: #0056b3;
+    }
+    .section-content {
+      display: none;
+      margin-top: 15px;
+      text-align: center;
+    }
+    .section-content.active {
+      display: block;
+    }
+    .follow-path-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+    .follow-path-btn:hover {
+      background: #218838;
+    }
+
+  .container
+    h1.main-heading Courses and Resources
+    .course-sections
+      each course in ['college-academics', 'web-dev', 'ai-ml', 'dsa', 'competitive-programming', 'blockchain-cybersecurity', 'assignments']
+        .course-section(id=course)
+          .section-header
+            h1= course.replace('-', ' ').toUpperCase()
+            p Learn about #{course.replace('-', ' ')}
+            button.toggle-btn(aria-expanded="false" aria-controls=`${course}-content`)
+              i.fas.fa-chevron-down
+          .section-content(id=`${course}-content`)
+            a.follow-path-btn(href=`/course/${course}`) Follow Path
+
+  script.
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const sectionContent = document.getElementById(button.getAttribute('aria-controls'));
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        sectionContent.classList.toggle('active');
+        button.setAttribute('aria-expanded', !isExpanded);
+      });
+    });

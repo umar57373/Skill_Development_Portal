@@ -1,0 +1,41 @@
+extends layout
+
+block content-head
+  title About Us - SkillUp
+  style.
+    .about-content {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 3rem;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .about-header {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #000; /* Black color for 'About' */
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .about-header span.skillup {
+      color: #007BFF; /* Blue color for 'SkillUp' */
+    }
+    .about-content p {
+      color: #34495e;
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+block content-body
+    main
+        section.about-content
+            h1.about-header About Us - SkillUp
+            p SkillUp is Vignan University's premier learning platform, dedicated to empowering students with the skills and knowledge they need to excel in their academic and professional journeys.
+            p Founded with the vision of bridging the gap between academic learning and industry requirements, SkillUp provides comprehensive courses, hands-on projects, and personalized mentoring to ensure our students are well-prepared for their future careers.
+            p Our platform combines cutting-edge technology with expert instruction to deliver an unparalleled learning experience. We focus on practical skills, industry-relevant projects, and real-world applications to ensure our students are job-ready upon completion of their courses.

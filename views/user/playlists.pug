@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title #{playlist ? playlist.title : 'Playlist Not Found'}
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+
+  body
+    if !playlist
+      p.text-center.text-red-500.font-bold Playlist not found.
+    else
+      .container
+        h1.title #{playlist.title}
+        .video-player
+          #youtube-player
+          p.video-title Lecture #{selectedVideoIndex + 1}: #{playlist.videos[selectedVideoIndex].title}
+
+        .video-list
+          each video, index in playlist.videos
+            .video-item(data-index=index)
+              p.font-medium.text-gray-800 Lecture #{index + 1}: #{video.title}
+
+        script(src="https://www.youtube.com/iframe_api")
+
+script.
+  let player;
+  let selectedVideoIndex = 0;
+  const playlistVideos = !{JSON.stringify(playlist ? playlist.videos : [])};
+
+  function onYouTubeIframeAPIReady() {
+    if (playlistVideos.length === 0) return;
+    player = new YT.Player('youtube-player', {
+      videoId: playlistVideos[selectedVideoIndex]?.url,
+      events: { 'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange }
+    });
+  }
+
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }

@@ -1,0 +1,96 @@
+doctype html
+html
+  head
+    title SkillUp
+    link(rel="stylesheet" href="/assets/css/styles.css")
+  body
+    header.header
+      h1 SkillUp
+      nav
+        ul
+          li: a(href="#") Home
+          li: a(href="aboutus") About Us
+          li: a(href="#") ContactUs
+          li: a(href="login") Login
+          li: a(href="register") Signup
+    .container
+      .left-section
+        img(src="./assets/img/image-removebg-preview.png", alt="SkillUp Image")
+      .right-section
+        h1 Welcome to
+        h2 SkillUp
+        p Your ultimate platform for learning and skill development. Transform your career with cutting-edge courses and expert guidance.
+        button Follow Path
+
+    //- Study Paths Section Heading
+    .study-paths-heading
+      h2 Study Paths
+      p Explore our wide range of learning paths designed to help you succeed in various fields.
+
+    //- Course Paths Section
+    .course-paths
+      .course-card
+        .course-image
+          img(src="./assets/img/college.png", alt="College Academics")
+        .course-info
+          h3 College Academics
+          p A comprehensive guide to succeeding in your college studies.
+          button Follow Path
+      .course-card
+        .course-info
+          h3 Web Dev
+          p Learn the fundamentals of building websites and web applications.
+          button Follow Path
+        .course-image
+          img(src="./assets/img/webdev.jpg", alt="Web Dev")
+      .course-card
+        .course-image
+          img(src="./assets/img/ai_ml.png", alt="AI/ML")
+        .course-info
+          h3 AI/ML
+          p Dive into Artificial Intelligence and Machine Learning concepts.
+          button Follow Path
+      .course-card
+        .course-info
+          h3 Data Structures & Algorithms
+          p Master the building blocks of programming and problem-solving.
+          button Follow Path
+        .course-image
+          img(src="./assets/img/dsa.png", alt="Data Structures & Algorithms")
+      .course-card
+        .course-image
+          img(src="./assets/img/cp.png", alt="Competitive Programming")
+        .course-info
+          h3 Competitive Programming
+          p Sharpen your coding skills through challenges and contests.
+          button Follow Path
+      .course-card
+        .course-info
+          h3 Blockchain/CyberSecurity
+          p Explore the world of decentralized systems and cyber protection.
+          button Follow Path
+        .course-image
+          img(src="./assets/img/cybersecurity.jpg", alt="Blockchain/CyberSecurity")
+    footer
+      .footer-container
+        .footer-column
+          h3 Quick Links
+          ul
+            li: a(href="/") Home
+            li: a(href="/aboutus") About Us
+            li: a(href="/services") Services
+            li: a(href="/contact") Contact
+        .footer-column
+          h3 Follow Us
+          .social-icons
+            a(href="#"): i.fab.fa-facebook
+            a(href="#"): i.fab.fa-twitter
+            a(href="#"): i.fab.fa-instagram
+        .footer-column.newsletter
+          h3 Subscribe to Our Newsletter
+          p Get the latest deals and offers directly in your inbox!
+          form(action="/subscribe" method="post" onsubmit="")
+            input(type="email" name="email" placeholder="Enter your email" required)
+            button(type="submit") Subscribe
+      .copyright
+        p &copy; 2024 LMS. All rights reserved.

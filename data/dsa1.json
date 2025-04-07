@@ -1,0 +1,3728 @@
+{
+    "course": [
+      {
+        "step": "Step 1: Learn the basics",
+        "progress": "0/31",
+        "lectures": [
+          {
+            "title": "Lec 1: Things to Know in C++/Java/Python or any language",
+            "progress": "0/9",
+            "problems": [
+              {
+                "status": false,
+                "problem": "User Input / Output",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Data Types",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "If Else statements",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Switch Statement",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "What are arrays, strings?",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "For loops",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "While loops",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Functions (Pass by Reference and Value)",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Time Complexity [Learn Basics, and then analyse in next Steps]",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          },
+          {
+            "title": "Lec 2: Build-up Logical Thinking",
+            "progress": "0/1",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Patterns",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          },
+          {
+            "title": "Lec 3: Learn STL/Java-Collections or similar thing in your language",
+            "progress": "0/2",
+            "problems": [
+              {
+                "status": false,
+                "problem": "C++ STL",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Java Collections",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          },
+          {
+            "title": "Lec 4: Know Basic Maths",
+            "progress": "0/7",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Count Digits",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Reverse a Number",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Check Palindrome",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "GCD Or HCF",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Armstrong Numbers",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Print all Divisors",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Check for Prime",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          },
+          {
+            "title": "Lec 5: Learn Basic Recursion",
+            "progress": "0/9",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Understand recursion by print something N times",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Print name N times using recursion",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Print 1 to N using recursion",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Print N to 1 using recursion",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Sum of first N numbers",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Factorial of N numbers",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Reverse an array",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Check if a string is palindrome or not",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Fibonacci Number",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          },
+          {
+            "title": "Lec 6: Learn Basic Hashing",
+            "progress": "0/3",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Hashing Theory",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Counting frequencies of array elements",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Find the highest/lowest frequency element",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "step": "Step 2: Learn Important Sorting Techniques",
+        "progress": "0/7",
+        "lectures": [
+          {
+            "title": "Lec 1: Sorting-I",
+            "progress": "0/3",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Selection Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Bubble Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Insertion Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          },
+          {
+            "title": "Lec 2: Sorting-II",
+            "progress": "0/4",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Merge Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Recursive Bubble Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Recursive Insertion Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Quick Sort",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "step": "Step 3: Solve Problems on Arrays [Easy -> Medium -> Hard]",
+        "progress": "0/40",
+        "lectures": [
+          {
+            "title": "Lec 1: Easy",
+            "progress": "0/14",
+            "problems": [
+              {
+                "status": false,
+                "problem": "Largest Element in an Array",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Second Largest Element in an Array without sorting",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Check if the array is sorted",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Remove duplicates from Sorted array",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Left Rotate an array by one place",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Left rotate an array by D places",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Move Zeros to end",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Linear Search",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Find the Union",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Find missing number in an array",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Maximum Consecutive Ones",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Find the number that appears once, and other numbers twice.",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Longest subarray with given sum K(positives)",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Longest subarray with sum K (Positives + Negatives)",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              }
+            ]
+          },
+          {
+            "title": "Lec 2: Medium",
+            "progress": "0/14",
+            "problems": [
+              {
+                "status": false,
+                "problem": "2Sum Problem",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Sort an array of 0's 1's and 2's",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Medium"
+              },
+              {
+                "status": false,
+                "problem": "Majority Element (>n/2 times)",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+              {
+                "status": false,
+                "problem": "Kadane's Algorithm, maximum subarray sum",
+                "article": "#",
+                "youtube": "#",
+                "practice": "#",
+                "difficulty": "Easy"
+              },
+            {
+              "status": false,
+              "problem": "Stock Buy and Sell",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Rearrange the array in alternating positive and negative items",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Next Permutation",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Leaders in an Array problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Longest Consecutive Sequence in an Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Set Matrix Zeros",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Rotate Matrix by 90 degrees",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Print the matrix in spiral manner",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count subarrays with given sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        },
+        {
+          "title": "Lec 3: Hard",
+          "progress": "0/12",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Pascal's Triangle",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Majority Element (n/3 times)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "3-Sum Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "4-Sum Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Largest Subarray with 0 Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count number of subarrays with given xor K",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Merge Overlapping Subintervals",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Merge two sorted arrays without extra space",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find the repeating and missing number",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Count Inversions",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Reverse Pairs",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Maximum Product Subarray",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 4: Binary Search [1D, 2D Arrays, Search Space]",
+      "progress": "0/32",
+      "lectures": [
+        {
+          "title": "Lec 1: BS on 1D Arrays",
+          "progress": "0/13",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Binary Search to find X in sorted array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Lower Bound",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Upper Bound",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Search Insert Position",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Floor/Ceil in Sorted Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find the first or last occurrence of a given number in a sorted array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Count occurrences of a number in a sorted array with duplicates",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Search in Rotated Sorted Array I",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Search in Rotated Sorted Array II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find minimum in Rotated Sorted Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find out how many times has an array been rotated",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Single element in a Sorted Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Find peak element",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: BS on Answers",
+          "progress": "0/14",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Find square root of a number in log n",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find the Nth root of a number using binary search",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Koko Eating Bananas",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Minimum days to make M bouquets",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Find the smallest Divisor",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Capacity to Ship Packages within D Days",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Kth Missing Positive Number",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Aggressive Cows",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Book Allocation Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Split array - Largest Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Painter's partition",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Minimize Max Distance to Gas Station",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Median of 2 sorted arrays",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Kth element of 2 sorted arrays",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 3: BS on 2D Arrays",
+          "progress": "0/5",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Find the row with maximum number of 1's",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Search in a 2 D matrix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Search in a row and column wise sorted matrix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find Peak Element (2D Matrix)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Matrix Median",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 5: Strings [Basic and Medium]",
+      "progress": "0/15",
+      "lectures": [
+        {
+          "title": "Lec 1: Basic and Easy String Problems",
+          "progress": "0/7",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Remove outermost Paranthesis",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Reverse words in a given string / Palindrome Check",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Largest odd number in a string",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Longest Common Prefix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Isomorphic String",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "check whether one string is a rotation of another",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Check if two strings are anagram of each other",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Medium String Problems",
+          "progress": "0/8",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Sort Characters by frequency",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Maximum Nesting Depth of Paranthesis",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Roman Number to Integer and vice versa",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Atoi",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count Number of Substrings",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Palindromic Substring[Do it without DP]",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Sum of beauty of all substrings",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Reverse a String using Stack/Recursion",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 6: Linked List [Learn all types of LL and Basic Qs]",
+      "progress": "0/28",
+      "lectures": [
+        {
+          "title": "Lec 1: Learn Singly LL",
+          "progress": "0/10",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to LinkedList [Implement SLL] Theory",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Insert in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Delete in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Insert at head in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Insert at the end in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Delete head in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Delete tail in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Length of LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Search in SLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Reverse a LinkedList [Iterative]",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Learn Doubly LL",
+          "progress": "0/5",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Doubly LL [Implement DLL] Theory",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Insert in DLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Delete in DLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Reverse a DLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Insert at head/tail in DLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        },
+        {
+          "title": "Lec 3: Learn Circular LL",
+          "progress": "0/4",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Circular LL [Implement CLL] Theory",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Insert in CLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Delete in CLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Reverse a CLL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        },
+        {
+          "title": "Lec 4: Medium Problems on LL",
+          "progress": "0/9",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Reverse a LL [Recursive]",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Find middle of LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Detect a loop in LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Find length of loop in LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Check if LL is palindrome or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Segregate odd and even nodes in LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Intersection point of two LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Pairwise swap nodes in LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Delete middle of LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 7: Learn Stack and Queue",
+      "progress": "0/22",
+      "lectures": [
+        {
+          "title": "Lec 1: Stack",
+          "progress": "0/10",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Implement Stack using array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Stack using LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Reverse a stack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Check for balanced paranthesis",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Next Greater Element",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Next Smaller Element",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Sort a stack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Largest Rectangular area in Histogram",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Max rectangle in Binary Matrix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "The Celebrity Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Queue",
+          "progress": "0/12",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Implement Queue using array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Queue using LL",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Stack using Queue",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Implement Queue using Stack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Reverse a Queue",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Implement Circular Queue",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "First non-repeating character in stream",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Rotten Oranges",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Distance of nearest cell having 1",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "First negative integer in every window of size k",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Circular tour (Gas Station)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Sliding Window Maximum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 8: Recursion and Backtracking",
+      "progress": "0/15",
+      "lectures": [
+        {
+          "title": "Lec 1: Recursion",
+          "progress": "0/7",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Subset Sums",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Combination Sum-I",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Combination Sum-II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Print all subsequences/Power Set",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Generate all binary strings",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Generate Paranthesis",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Letter Combinations of a Phone Number",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Backtracking",
+          "progress": "0/8",
+          "problems": [
+            {
+              "status": false,
+              "problem": "N-Queens",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Sudoku Solver",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "M-Coloring Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Rat in a Maze",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Word Search",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Permutations",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Partition to K Equal Sum Subsets",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Palindrome Partitioning",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 9: Binary Search [Advanced Problems]",
+      "progress": "0/10",
+      "lectures": [
+        {
+          "title": "Lec 1: Advanced BS Problems",
+          "progress": "0/10",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Allocate minimum number of pages",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Median of Row Wise Sorted Matrix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Single Element in Sorted Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Search in Nearly Sorted Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find element in Bitonic Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Search in Row wise and Column wise sorted matrix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum difference element in Sorted Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Peak Element/Find maximum element in Bitonic Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find maximum element in unsorted array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Allocate minimum number of pages",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 10: Bit Manipulation",
+      "progress": "0/10",
+      "lectures": [
+        {
+          "title": "Lec 1: Bit Manipulation",
+          "progress": "0/10",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Check if Kth bit is set or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Count set bits",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Rightmost set bit",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Power of 2 or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Odd occurring element",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Two odd occurring elements",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Power Set using Bit",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count number of bits to be flipped to convert A to B",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Find XOR of all subsets",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Divide two integers without using multiplication, division and mod",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 11: Heap [Priority Queue]",
+      "progress": "0/12",
+      "lectures": [
+        {
+          "title": "Lec 1: Heap",
+          "progress": "0/12",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Heap [Theory]",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Implement Min Heap",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Implement Max Heap",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Kth smallest element",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Kth largest element",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Sort a nearly sorted array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Merge K sorted arrays",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "K most frequent elements",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Median in a running stream",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Check if array is Heap or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Convert BST to Min Heap",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Cost of ropes",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 12: Greedy Algorithm",
+      "progress": "0/14",
+      "lectures": [
+        {
+          "title": "Lec 1: Greedy",
+          "progress": "0/14",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Activity Selection Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Fractional Knapsack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum number of coins",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Job sequencing Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Candy",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Program for Shortest Job First (or SJF) CPU Scheduling",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Program for Least Recently Used (LRU) Page Replacement Algorithm",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Insert Interval",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Merge Intervals",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Non-overlapping Intervals",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Platforms",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Jump Game",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Jump Game II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Cost to Hire K Workers",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 13: Binary Trees [Traversals, Medium and Hard Problems]",
+      "progress": "0/39",
+      "lectures": [
+        {
+          "title": "Lec 1: Traversals",
+          "progress": "0/13",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Trees",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Binary Tree Representation in C++",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Binary Tree Representation in Java",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Binary Tree Traversals in Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Preorder Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Inorder Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Post-order Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Level order Traversal / Level order traversal in spiral form",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Iterative Preorder Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Iterative Inorder Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Post-order Traversal of Binary Tree using 2 stack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Post-order Traversal of Binary Tree using 1 stack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Preorder, Inorder, and Postorder Traversal in one Traversal",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Medium Problems",
+          "progress": "0/12",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Height of a Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Check if the Binary tree is height-balanced or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Diameter of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Maximum path sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Check if two trees are identical or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Zig Zag Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Boundary Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Vertical Order Traversal of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Top View of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Bottom View of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Right/Left View of Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Symmetric Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 3: Hard Problems",
+          "progress": "0/14",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Root to Node Path in Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "LCA in Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Maximum width of a Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Check for Children Sum Property",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Print all the Nodes at a distance of K in a Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum time taken to BURN the Binary Tree from a Node",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Count total Nodes in a COMPLETE Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Requirements needed to construct a Unique Binary Tree | Theory",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Construct Binary Tree from inorder and preorder",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Construct the Binary Tree from Postorder and Inorder Traversal",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Serialize and deserialize Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Morris Preorder Traversal of a Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Morris Inorder Traversal of a Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Flatten Binary Tree to LinkedList",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 14: Binary Search Trees [Concept and Problems]",
+      "progress": "0/16",
+      "lectures": [
+        {
+          "title": "Lec 1: Concepts",
+          "progress": "0/3",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Binary Search Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Search in a Binary Search Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Find Min/Max in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Practice Problems",
+          "progress": "0/13",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Insert in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Delete in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Ceil in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Floor in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Check if tree is BST or not",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "LCA in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Construct BST from Preorder",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Inorder Successor/Predecessor in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "BST Iterator",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Two Sum in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Recover BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Largest BST in Binary Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Kth Smallest Element in BST",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 15: Graphs [Concepts & Problems]",
+      "progress": "0/54",
+      "lectures": [
+        {
+          "title": "Lec 1: Graph Basics",
+          "progress": "0/8",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Graph Representation (Adj Matrix, Adj List)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "BFS of Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "DFS of Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Number of Provinces",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Connected Components in Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Cycle Detection in Undirected Graph (DFS)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Cycle Detection in Undirected Graph (BFS)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Bipartite Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Graph Algorithms",
+          "progress": "0/46",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Cycle Detection in Directed Graph (DFS)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Topological Sort (DFS)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Topological Sort (BFS - Kahn's Algorithm)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Shortest Path in Unweighted Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Shortest Path in Weighted DAG",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Dijkstra's Algorithm",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Bellman Ford Algorithm",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Floyd Warshall Algorithm",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Prim's Algorithm (MST)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Kruskal's Algorithm (MST)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Find Bridges in Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Find Articulation Points in Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Strongly Connected Components (Kosaraju's Algo)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Euler Circuit and Path",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Flood Fill Algorithm",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Number of Islands",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Word Ladder",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Word Ladder II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Shortest Path in Binary Matrix",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Course Schedule",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Course Schedule II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Height Trees",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Alien Dictionary",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Cheapest Flights Within K Stops",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Network Delay Time",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Path with Maximum Gold",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Cost to Connect All Points",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Clone Graph",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Detect Cycle in Directed Graph using Colors",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Prerequisite Tasks",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Rotting Oranges",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Shortest Bridge",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Critical Connections in a Network",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Find Eventual Safe States",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Making a Large Island",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Regions Cut By Slashes",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Shortest Path with Alternating Colors",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Score of a Path Between Two Cities",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Number of Operations to Make Network Connected",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Accounts Merge",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Path with Different Adjacent Characters",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Reconstruct Itinerary",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Min Cost to Connect All Points",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 16: Dynamic Programming [Patterns and Problems]",
+      "progress": "0/56",
+      "lectures": [
+        {
+          "title": "Lec 1: Introduction to DP",
+          "progress": "0/1",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Dynamic Programming Introduction",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: 1D DP",
+          "progress": "0/8",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Climbing Stairs",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Fibonacci Number",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "Min Cost Climbing Stairs",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Easy"
+            },
+            {
+              "status": false,
+              "problem": "House Robber",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "House Robber II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Increasing Subsequence",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Maximum Sum Increasing Subsequence",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Arithmetic Subsequence",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 3: 2D DP",
+          "progress": "0/12",
+          "problems": [
+            {
+              "status": false,
+              "problem": "0/1 Knapsack",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Subset Sum Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Equal Sum Partition Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count of Subsets with given Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Subset Sum Difference",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Target Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Coin Change",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Coin Change II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Common Subsequence",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Common Substring",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Palindromic Subsequence",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Insertion/Deletion to make string A to B",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 4: DP on Grids",
+          "progress": "0/10",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Unique Paths",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Unique Paths II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Path Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Triangle",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Falling Path Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Cherry Pickup",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Cherry Pickup II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Dungeon Game",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Path with Maximum Gold",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Maximal Square",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 5: Advanced DP",
+          "progress": "0/25",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Rod Cutting",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Word Break",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Palindrome Partitioning II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Partition Equal Subset Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Perfect Sum Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Cost to Cut a Stick",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Burst Balloons",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Evaluate Boolean Expression to True",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Scramble String",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Egg Dropping Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest Repeating Subsequence",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count Palindromic Subsequences",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Longest String Chain",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Box Stacking Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Maximum Profit in Job Scheduling",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Interleaving String",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Maximum Length of Pair Chain",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Number of Taps to Open to Water a Garden",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Minimum Cost Tree From Leaf Values",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Number of Ways to Stay in the Same Place After Some Steps",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Profitable Schemes",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Count Vowels Permutation",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Number of Ways to Form a Target String Given a Dictionary",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Distinct Subsequences",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Edit Distance",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 17: Trie [Concepts & Problems]",
+      "progress": "0/10",
+      "lectures": [
+        {
+          "title": "Lec 1: Concepts",
+          "progress": "0/2",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Trie",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Implement Trie (Prefix Tree)",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Problems",
+          "progress": "0/8",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Longest Common Prefix using Trie",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Word Search II",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Autocomplete System",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Maximum XOR of Two Numbers in an Array",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Palindrome Pairs",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Replace Words",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Design Add and Search Words Data Structure",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Prefix and Suffix Search",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Step 18: Segment Trees [Concepts & Problems]",
+      "progress": "0/12",
+      "lectures": [
+        {
+          "title": "Lec 1: Concepts",
+          "progress": "0/2",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Introduction to Segment Trees",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Construct Segment Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            }
+          ]
+        },
+        {
+          "title": "Lec 2: Problems",
+          "progress": "0/10",
+          "problems": [
+            {
+              "status": false,
+              "problem": "Range Sum Query",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Range Minimum Query",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Range Maximum Query",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Update in Segment Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Lazy Propagation in Segment Tree",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Count of Range Sum",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "The Skyline Problem",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Range XOR Queries",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Medium"
+            },
+            {
+              "status": false,
+              "problem": "Count of Smaller Numbers After Self",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            },
+            {
+              "status": false,
+              "problem": "Reverse Pairs",
+              "article": "#",
+              "youtube": "#",
+              "practice": "#",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

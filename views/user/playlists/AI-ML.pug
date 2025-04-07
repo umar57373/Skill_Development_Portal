@@ -1,0 +1,38 @@
+extends ../userLayout
+
+block content-head
+  title AI/ML Courses
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css")
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+  style.
+    .progress-bar {
+      height: 6px;
+      background: linear-gradient(to right, #3b82f6 0%, #60a5fa 100%);
+    }
+
+block content-body
+  .container.mx-auto.p-6
+    h1.text-4xl.font-bold.mb-6.text-center.text-blue-700 AI & Machine Learning Courses
+
+    .grid(class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8")
+      each course in courses
+        if course.category === 'ai-ml'
+          .div(class="bg-white shadow-lg rounded-2xl overflow-hidden transition-transform transform hover:scale-105")
+            img(src=course.image, alt=course.title, class="w-full h-48 object-cover")
+            .p-4
+              h2.text-xl.font-semibold.mb-2= course.title
+              p.text-gray-600.mb-4= course.description
+
+              .flex.justify-between.items-center
+                a(href=`/user/${course.id}`, class="text-white bg-blue-600 px-3 py-1 rounded hover:bg-blue-700")
+                  i.fas.fa-book-open.mr-1
+                  | View Chapters
+
+                a(href=`/playlists/${course.id}`, class="text-blue-600 underline")
+                  i.fas.fa-arrow-right.mr-1
+                  | Explore
+
+              .mt-4
+                .w-full.bg-gray-200.rounded-full
+                  .progress-bar.rounded-full(style=`width: ${course.progress || 0}%`)
+                p.text-sm.text-gray-500.mt-1 Progress: #{course.progress || 0}%

@@ -1,0 +1,87 @@
+/* General Styles */
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Course Paths Grid */
+.course-paths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Course Card */
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Course Image */
+.course-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Course Info */
+.course-info {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1; /* Ensures text does not overflow */
+}
+
+.course-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.course-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+/* Follow Path Button */
+.course-info .follow-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.course-info .follow-btn:hover {
+  background: #0056b3;
+}

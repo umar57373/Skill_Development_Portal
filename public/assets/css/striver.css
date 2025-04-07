@@ -1,0 +1,159 @@
+/* public/styles.css */
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.steps-container {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #222;
+}
+
+.course-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  border-left: 4px solid #e74c3c;
+}
+
+.step-title {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.progress {
+  margin: 5px 0;
+  color: #bdc3c7;
+}
+
+.lecture {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.lecture-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lecture-title {
+  color: #3498db;
+  margin: 0;
+  font-size: 18px;
+}
+
+.lecture-progress {
+  margin: 5px 0;
+  color: #bdc3c7;
+}
+
+.show-lectures {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-lectures:hover {
+  background-color: #d35400;
+}
+
+.lectures-content {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: #fff;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+.easy {
+  background-color: #27ae60;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.medium {
+  background-color: #e67e22;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.hard {
+  background-color: #c0392b;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.icon-article::before {
+  content: "📄";
+  color: #3498db;
+}
+
+.icon-youtube::before {
+  content: "▶️";
+  color: #e74c3c;
+}
+
+.icon-practice::before {
+  content: "💻";
+  color: #27ae60;
+}
+
+.icon-star::before {
+  content: "⭐";
+  color: #f1c40f;
+}
+
+button {
+  background-color: #7f8c8d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #95a5a6;
+}
+
+.text-danger {
+  color: #e74c3c;
+}

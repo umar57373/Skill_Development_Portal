@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/userStyle.css">
+    <link rel="stylesheet" href="/assets/css/course.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Quiz - Skillhub</title>
+    <style>
+      .quiz-container { max-width: 900px; margin: 40px auto; padding: 2rem; background-color: white; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
+      h1 { color: #3498db; text-align: center; }
+      .admin-section, .user-section { margin-top: 2rem; }
+      .form-group { margin-bottom: 1rem; }
+      .form-group label { display: block; font-size: 1rem; margin-bottom: 0.5rem; color: #333; }
+      .form-group input { margin-right: 0.5rem; }
+      .btn { background-color: #3498db; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; }
+      .btn:hover { background-color: #2980b9; }
+      .remove-btn { background-color: #e74c3c; margin-left: 1rem; }
+      .remove-btn:hover { background-color: #c0392b; }
+      .quiz-list { margin-top: 1rem; }
+      .quiz-item { border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; position: relative; }
+      .quiz-item h3 { margin: 0; color: #333; }
+      .quiz-item p { margin: 0.5rem 0; }
+      .error { color: red; margin-bottom: 1rem; }
+      .success { color: green; margin-bottom: 1rem; }
+      .result { margin-top: 1rem; padding: 1rem; border-radius: 5px; background-color: #d4edda; color: #155724; }
+      .hidden { display: none; }
+      .timer { font-size: 1.2rem; color: #e74c3c; margin-bottom: 1rem; }
+      .due-date { font-style: italic; color: #7f8c8d; }
+      
+    </style>
+  </head>
+  <body> 
+    <header class="header">
+      <h1>SkillUp</h1>
+      <button class="toggle-btn">☰</button>
+    </header>
+    <div class="sidebar deActive">
+      <ul>
+        <li><a href="/user/dashboard"><i class="fas fa-tachometer-alt"> </i>Dashboard</a></li>
+        <li><a href="/user/courses-list"><i class="fas fa-book-open"> </i>Courses List</a></li>
+        <li><a href="/user/purchase"><i class="fas fa-shopping-basket"> </i>Purchase a Course</a></li>
+        <li><a href="/user/Coding_Question"><i class="fas fa-laptop-code"> </i>Coding Question</a></li>
+        <li><a href="/user/Assignments"><i class="fas fa-clipboard-list"> </i>Assignments</a></li>
+        <li><a href="/user/grades"> <i class="fas fa-graduation-cap"> </i>Grades</a></li>
+        <li><a href="/user/quiz"> <i class="fas fa-question-circle"> </i>Quiz</a></li>
+        <li><a href="/user/Videos"> <i class="fas fa-question-circle"> </i>Videos     </a></li>
+        <li><a href="/user/support"><i class="fas fa-headset"> </i>Support</a></li>
+        <li><a href="/user/profile"><i class="fas fa-user"> </i>My Profile</a></li>
+        <li><a href="/user/logout"><i class="fas fa-sign-out-alt"> </i>Logout</a></li>
+      </ul>
+    </div>
+    <div class="quiz-container">
+      <h1>Quiz Section</h1>
+      <div class="user-section">
+        <h2>Available Quizzes</h2>
+        <p>No quizzes available yet.</p>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.quiz-item').forEach(item => {
+          const quizId = item.getAttribute('data-quiz-id');
+          const quizForm = document.getElementById(`quizForm-${quizId}`);
+          if (!quizForm) return; // Skip if no form (e.g., already submitted or admin view)
+          const timerDisplay = document.getElementById(`timer-${quizId}`);
+          const startBtn = document.getElementById(`startBtn-${quizId}`);
+          const questions = quizForm.querySelectorAll('.question');
+          const nextBtn = item.querySelector('.next-btn');
+          const prevBtn = item.querySelector('.prev-btn');
+          const submitBtn = item.querySelector('.submit-btn');
+          const navigation = item.querySelector('.navigation');
+          let currentIndex = 0;
+          let timeLeft = parseInt(quizForm.querySelector('input[name="timeLimit"]').value) || 600;
+          let timerInterval = null;
+      
+          function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerDisplay.textContent = `Timer: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            if (timeLeft <= 0) {
+              alert('Time is up! Submitting quiz...');
+              quizForm.submit();
+            }
+            timeLeft--;
+          }
+      
+          function showQuestion(index) {
+            questions.forEach((q, i) => {
+              q.classList.toggle('hidden', i !== index);
+            });
+            prevBtn.classList.toggle('hidden', index === 0);
+            nextBtn.classList.toggle('hidden', index === questions.length - 1);
+            submitBtn.classList.toggle('hidden', index !== questions.length - 1);
+          }
+      
+          startBtn.addEventListener('click', () => {
+            startBtn.classList.add('hidden');
+            timerDisplay.classList.remove('hidden');
+            navigation.classList.remove('hidden');
+            showQuestion(currentIndex);
+            timerInterval = setInterval(updateTimer, 1000);
+          });
+      
+          nextBtn.addEventListener('click', () => {
+            const currentQ = questions[currentIndex];
+            const isMultiple = currentQ.dataset.multiple === 'true';
+            const selected = currentQ.querySelectorAll(isMultiple ? 'input[type="checkbox"]:checked' : 'input[type="radio"]:checked');
+            if (selected.length === 0 || (isMultiple && selected.length < 2)) {
+              alert('Please select an answer' + (isMultiple ? ' (two required)' : ''));
+              return;
+            }
+            if (currentIndex < questions.length - 1) {
+              currentIndex++;
+              showQuestion(currentIndex);
+            }
+          });
+      
+          prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+              currentIndex--;
+              showQuestion(currentIndex);
+            }
+          });
+      
+          submitBtn.addEventListener('click', (e) => {
+            clearInterval(timerInterval);
+            let attempted = 0;
+            let allAnswered = true;
+            questions.forEach((q, i) => {
+              const isMultiple = q.dataset.multiple === 'true';
+              const selected = q.querySelectorAll(isMultiple ? 'input[type="checkbox"]:checked' : 'input[type="radio"]:checked');
+              if (selected.length > 0) attempted++;
+              if ((selected.length === 0 || (isMultiple && selected.length < 2)) && i >= 1) {
+                allAnswered = false;
+                alert(`Please answer question ${i + 1}` + (isMultiple ? ' (two required)' : ''));
+              }
+            });
+            if (!allAnswered) {
+              e.preventDefault();
+            } else {
+              alert(`You attempted ${attempted} out of ${questions.length} questions`);
+            }
+          });
+      
+          quizForm.addEventListener('submit', () => {
+            clearInterval(timerInterval);
+          });
+        });
+      
+        window.removeQuiz = function(button) {
+          const quizId = button.getAttribute('data-quiz-id');
+          if (confirm('Are you sure you want to remove this quiz?')) {
+            fetch(`/user/remove-quiz/${quizId}`, {
+              method: 'DELETE',
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            })
+            .then(res => res.json())
+            .then(data => {
+              if (data.success) {
+                alert('Quiz removed successfully!');
+                location.reload();
+              } else {
+                alert(data.error);
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('Failed to remove quiz.');
+            });
+          }
+        };
+      });
+    </script>
+    <button class="scroll-to-top" id="scrollToTopBtn">↑      </button>
+    <script src="/assets/js/userScript.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
+        <div class="footer-column newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get the latest deals and offers directly in your inbox!</p>
+          <form action="/subscribe" method="post" onsubmit="">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 LMS. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

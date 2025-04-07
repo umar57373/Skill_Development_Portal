@@ -1,0 +1,128 @@
+extends userLayout
+
+block content-head
+  title My Profile
+  link(rel="stylesheet", href="/assets/css/profile.css")
+
+block content-body
+  .profile-container
+    if user
+      .profile-main-content
+        .profile-sidebar
+          .profile-pic
+            img(src=`/uploads/profile_pics/${user.profile_pic || 'default.png'}` alt="Profile Picture")
+          h1 #{user.first_name || 'User'} #{user.last_name || ''}
+          p User Profile
+          button.edit-btn(onclick="openOverlay('profilePicOverlay')")
+            i.fa.fa-edit
+            |  Edit Picture
+
+        .profile-main
+          h2 Personal Information
+          .info-item
+            label First Name
+            p #{user.first_name || 'Not set'}
+          .info-item
+            label Last Name
+            p #{user.last_name || 'Not set'}
+          .info-item
+            label Email
+            p #{user.email || 'Not set'}
+          .info-item
+            label Phone
+            p #{user.phone || 'Not set'}
+
+          .profile-actions
+            button.edit-btn(onclick="openOverlay('personalInfoOverlay')")
+              i.fa.fa-edit
+              |  Edit Personal Info
+            button.edit-btn(onclick="openOverlay('contactInfoOverlay')")
+              i.fa.fa-edit
+              |  Edit Contact Info
+            button.delete-btn(onclick=`deleteProfile("${user._id}")`)
+              i.fa.fa-trash
+              |  Delete Profile
+
+      span#update-message
+
+      .overlay#profilePicOverlay
+        .overlay-content
+          span.close-btn(onclick="closeOverlay()") ×
+          h2 Edit Profile Picture
+          form.edit-form#form-profile-pic(enctype="multipart/form-data")
+            input(type="hidden" value=`${user._id}` name="id")
+            input(type="file" name="profile_pic" accept="image/*" required)
+            button(type="submit") Save Changes
+
+      .overlay#personalInfoOverlay
+        .overlay-content
+          span.close-btn(onclick="closeOverlay()") ×
+          h2 Edit Personal Information
+          form.edit-form#form-personal-info
+            input(type="hidden" value=`${user._id}` name="id")
+            input(type="text" name="first_name" placeholder="First Name" value=user.first_name required)
+            input(type="text" name="last_name" placeholder="Last Name" value=user.last_name required)
+            button(type="submit") Save Changes
+
+      .overlay#contactInfoOverlay
+        .overlay-content
+          span.close-btn(onclick="closeOverlay()") ×
+          h2 Edit Contact Information
+          form.edit-form#form-contact-info
+            input(type="hidden" value=`${user._id}` name="id")
+            input(type="email" name="email" placeholder="Email" value=user.email required)
+            input(type="tel" name="phone" placeholder="Phone Number" value=user.phone required)
+            button(type="submit") Save Changes
+    else
+      p Error: User data not available. Please log in again.
+      a(href="/login") Login
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js")
+  script.
+    console.log('User object in template:', !{JSON.stringify(user)}); // Debug log
+
+    function openOverlay(overlayId) {
+      document.getElementById(overlayId).style.display = 'block';
+    }
+
+    function closeOverlay() {
+      document.querySelectorAll('.overlay').forEach(overlay => {
+        overlay.style.display = 'none';
+      });
+    }
+
+    document.querySelectorAll('.edit-form').forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formId = form.id;
+        const url = `/user/edit-${formId.split('-')[1]}/${form.querySelector('input[name="id"]').value}`;
+        const method = 'PUT';
+        const formData = new FormData(form);
+
+        try {
+          const response = await axios({
+            method: method,
+            url: url,
+            data: formData,
+            headers: { 'Content-Type': formId === 'form-profile-pic' ? 'multipart/form-data' : 'application/json' }
+          });
+          document.getElementById('update-message').textContent = response.data.message;
+          setTimeout(() => location.reload(), 2000);
+        } catch (error) {
+          document.getElementById('update-message').textContent = error.response?.data?.message || 'Error updating profile';
+        }
+      });
+    });
+
+    function deleteProfile(id) {
+      if (confirm('Are you sure you want to delete your profile?')) {
+        axios.delete(`/user/delete-profile/${id}`)
+          .then(response => {
+            alert(response.data.message);
+            window.location.href = '/login';
+          })
+          .catch(error => {
+            document.getElementById('update-message').textContent = error.response?.data?.message || 'Error deleting profile';
+          });
+      }
+    }
